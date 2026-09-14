@@ -1,0 +1,85 @@
+<!-- Belgenin modern HTML5 standartlarına uygun bir HTML dokümanı olduğunu tarayıcıya bildirir -->
+<!doctype html>
+<!-- Sayfanın ana kapsayıcısıdır, lang="tr" sayfa dilinin Türkçe olduğunu belirtir -->
+<html lang="tr">
+  <!-- Tarayıcıya ve arama motorlarına sayfa hakkında bilgi veren, ekranda doğrudan görünmeyen başlık alanı -->
+  <head>
+    <!-- Türkçe karakterlerin (ç, ğ, ı, ö, ş, ü) düzgün görüntülenmesi için karakter kodlamasını UTF-8 yapar -->
+    <meta charset="UTF-8" />
+
+    <!-- Sayfanın telefon, tablet ve bilgisayarlarda ekrana düzgün oturmasını (responsive/mobil uyumlu) sağlar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tarayıcı sekmesinde görünen sayfa başlığını belirler -->
+    <title>Kendini Tanıtma Kartım</title>
+
+    <!-- Tasarım ve stil kodlarımızın bulunduğu harici 'style.css' dosyasını bu HTML sayfasına bağlar -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Kullanıcının ekranda göreceği tüm görsel içeriklerin yer aldığı ana gövde -->
+  <body>
+    <!-- Tüm kart içeriğini bir arada tutan ve beyaz kutuyu oluşturan ana kart kapsayıcısı -->
+    <div class="card">
+      <!-- Profil görseli yerine büyük bir emoji yerleştirdiğimiz bölüm -->
+      <div class="emoji">👩‍💻</div>
+
+      <!-- Sayfanın en önemli ana başlığı: İsim ve selamlama -->
+      <h1>Merhaba! Ben Hatice</h1>
+
+      <!-- Kendimizle ilgili kısa bir özet/tanıtım cümlesi içeren paragraf -->
+      <p class="description">
+        Yazılım öğreniyorum ve kendi web sayfamı yapıyorum! 🚀
+      </p>
+
+      <!-- Alt başlık: Hakkımda bölümünün başlangıcı -->
+      <h2>Benim Hakkımda</h2>
+
+      <!-- İlgi alanlarımızı ve hobilerimizi anlatan açıklama paragrafı -->
+      <p>Kitap okumayı, müzik dinlemeyi ve yeni şeyler öğrenmeyi seviyorum.</p>
+
+      <!-- Alt başlık: Sevilen şeylerin listeleneceği bölümün başlığı -->
+      <h2>Sevdiklerim</h2>
+
+      <!-- Sevdiklerimiz kutularını 2 sütunlu ızgara (grid) şeklinde düzenleyen kapsayıcı -->
+      <div class="favorites">
+        <!-- 1. İlgi alanı kutucuğu (Müzik) -->
+        <div class="favorite">
+          🎵
+          <!-- Simgenin altındaki başlık/yazı etiketi -->
+          <span>Müzik</span>
+        </div>
+
+        <!-- 2. İlgi alanı kutucuğu (Kitap) -->
+        <div class="favorite">
+          📚
+          <!-- Simgenin altındaki başlık/yazı etiketi -->
+          <span>Kitap</span>
+        </div>
+
+        <!-- 3. İlgi alanı kutucuğu (Oyun) -->
+        <div class="favorite">
+          🎮
+          <!-- Simgenin altındaki başlık/yazı etiketi -->
+          <span>Oyun</span>
+        </div>
+
+        <!-- 4. İlgi alanı kutucuğu (Tasarım) -->
+        <div class="favorite">
+          🎨
+          <!-- Simgenin altındaki başlık/yazı etiketi -->
+          <span>Tasarım</span>
+        </div>
+      </div>
+
+      <!-- Tıklandığında JavaScript dosyamızdaki showMessage() fonksiyonunu çalıştıran etkileşim butonu -->
+      <button onclick="showMessage()">Bana Tıkla!</button>
+
+      <!-- Butona tıklandığında JavaScript ile içine tebrik mesajı yazdıracağımız başlangıçta boş olan paragraf -->
+      <p id="message"></p>
+    </div>
+
+    <!-- Sayfanın etkileşimini ve dinamik kodlarını içeren harici 'script.js' dosyasını sayfaya dahil eder -->
+    <script src="script.js"></script>
+  </body>
+</html>

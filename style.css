@@ -1,0 +1,167 @@
+/* Sayfanın tamamını kapsayan ana gövde (body) stilleri */
+body {
+  /* Tarayıcının varsayılan olarak kenarlarda bıraktığı boşlukları sıfırlar */
+  margin: 0;
+
+  /* Sayfadaki metinlerin yazı tipini (fontunu) belirler (Arial yoksa genel sans-serif kullanılır) */
+  font-family: Arial, sans-serif;
+
+  /* Sayfanın arka planına tatlı bir mor/leylak rengi verir */
+  background-color: pink;
+
+  /* Kartı ekranın tam ortasına hizalamak için modern Flexbox yerleşim modelini aktif eder */
+  display: flex;
+
+  /* İçeriği (kartı) yatayda tam ortaya hizalar */
+  justify-content: center;
+
+  /* İçeriği (kartı) dikeyde tam ortaya hizalar */
+  align-items: center;
+
+  /* Gövdenin yüksekliğini en az ekran boyu kadar (100% viewport height) yaparak dikeyde ortalamayı sağlar */
+  min-height: 100vh;
+}
+
+/* Tanıtım kartının ana beyaz kutu stilleri */
+.card {
+  /* Kartın genişliğini sabit 350 piksel yapar */
+  width: 350px;
+
+  /* Kartın arka plan rengini beyaz yapar */
+  background-color: white;
+
+  /* Kartın kenarları ile içindeki yazılar/öğeler arasına 30 piksel iç boşluk bırakır */
+  padding: 30px;
+
+  /* Kartın köşelerini 20 piksel yuvarlatarak modern ve yumuşak bir görünüm kazandırır */
+  border-radius: 20px;
+
+  /* Kartın içindeki tüm metinleri ve öğeleri merkeze (ortaya) hizalar */
+  text-align: center;
+
+  /* Karta derinlik hissi veren hafif ve yumuşak bir gölge ekler */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* En üstteki kadın yazılımcı emojisi */
+.emoji {
+  /* Emojinin büyüklüğünü 60 piksel yapar */
+  font-size: 60px;
+
+  /* Altındaki başlıkla yapışmaması için altına 10 piksel dış boşluk bırakır */
+  margin-bottom: 10px;
+}
+
+/* Ana başlık (Merhaba! Ben Hatice) stilleri */
+h1 {
+  /* Başlığın rengini canlı pembe yapar */
+  color: #ff5c8a;
+
+  /* Altındaki açıklama yazısıyla arasına 10 piksel boşluk ekler */
+  margin-bottom: 10px;
+}
+
+/* Alt başlıklar (Benim Hakkımda ve Sevdiklerim) stilleri */
+h2 {
+  /* Başlık rengini koyu gri/siyah tonunda yapar */
+  color: #333;
+
+  /* Üstteki öğelerden ayrışması için üstten 25 piksel boşluk bırakır */
+  margin-top: 25px;
+}
+
+/* Başlığın hemen altındaki tanıtım paragrafı */
+.description {
+  /* Yazı rengini yumuşak bir orta gri yapar */
+  color: #666;
+
+  /* Yazı boyutunu 16 piksel yapar */
+  font-size: 16px;
+}
+
+/* Sevdiklerimiz kutucuklarını barındıran ızgara (grid) kapsayıcısı */
+.favorites {
+  /* Kutuları düzenli bir ızgara düzenine sokar */
+  display: grid;
+
+  /* Kutuları eşit genişlikte 2 sütun (2 kolon) halinde yan yana dizer */
+  grid-template-columns: 1fr 1fr;
+
+  /* Kutuların birbirine değmemesi için aralarında 10 piksel boşluk bırakır */
+  gap: 10px;
+
+  /* Başlığın altından 15 piksel boşluk bırakır */
+  margin-top: 15px;
+}
+
+/* Sevdiklerimiz bölümündeki her bir küçük kutucuk */
+.favorite {
+  /* Kutucukların arka planını çok hafif açık gri yapar */
+  background-color: #f8f8f8;
+
+  /* Kutucuğun içine her yönden 15 piksel iç boşluk verir */
+  padding: 15px;
+
+  /* Kutucuğun köşelerini 12 piksel yuvarlatır */
+  border-radius: 12px;
+
+  /* İçindeki emojinin boyutunu 24 piksel yapar */
+  font-size: 24px;
+}
+
+/* Kutucukların içindeki yazı etiketi (Müzik, Kitap vb.) */
+.favorite span {
+  /* Emojinin altında ayrı bir satırda durması için blok elemana dönüştürür */
+  display: block;
+
+  /* Yazı boyutunu emojiden daha küçük olacak şekilde 14 piksel yapar */
+  font-size: 14px;
+
+  /* Üstteki emojiden 5 piksel aşağıya uzaklaştırır */
+  margin-top: 5px;
+}
+
+/* Etkileşimli buton stilleri */
+button {
+  /* Üstündeki favoriler kutusundan 25 piksel aşağıya iter */
+  margin-top: 25px;
+
+  /* Butonun içine yukarı-aşağı 12px, sağ-sol 24px iç dolgu ekler */
+  padding: 12px 24px;
+
+  /* Tarayıcının varsayılan kalın buton çerçevesini kaldırır */
+  border: none;
+
+  /* Butonun köşelerini 10 piksel yuvarlar */
+  border-radius: 10px;
+
+  /* Butonun arka plan rengini temaya uygun pembe yapar */
+  background-color: #ff5c8a;
+
+  /* Buton üzerindeki yazının rengini beyaz yapar */
+  color: white;
+
+  /* Buton yazı boyutunu 16 piksel yapar */
+  font-size: 16px;
+
+  /* Fare butonun üzerine geldiğinde el işaretine (tıklanabilir simgesine) dönüşmesini sağlar */
+  cursor: pointer;
+}
+
+/* Fare butonun üzerine geldiğinde (hover) çalışacak stil */
+button:hover {
+  /* Butonun rengini biraz daha koyu pembe yaparak basılma hissi/geri bildirim verir */
+  background-color: #ff3d73;
+}
+
+/* Butona basılınca görünecek olan tebrik mesajı */
+#message {
+  /* Butondan 15 piksel aşağıda görünmesi için üstten boşluk verir */
+  margin-top: 15px;
+
+  /* Mesajın dikkat çekmesi için yazıyı kalın (bold) yapar */
+  font-weight: bold;
+
+  /* Mesajın rengini tema rengimiz olan pembe yapar */
+  color: #ff5c8a;
+}
