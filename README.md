@@ -1,10 +1,10 @@
-# 🌸 Kendini Tanıtma Kartı (Profile Card)
+# Kendini Tanıtma Kartı (Profile Card)
 
 Web geliştirmeye yeni başlayanlar için hazırlanmış; **HTML5**, **CSS3** ve **JavaScript** temellerini pekiştiren etkileşimli bir "Kendini Tanıtma Kartı" projesidir.
 
 ---
 
-## 📌 Proje Hakkında
+## Proje Hakkında
 
 Bu proje, canlı eğitimlerde web geliştirmenin üç ana ayağını uygulamalı olarak göstermek amacıyla hazırlanmıştır:
 - **HTML:** Sayfanın iskeletini ve içerik hiyerarşisini kurar.
@@ -13,13 +13,13 @@ Bu proje, canlı eğitimlerde web geliştirmenin üç ana ayağını uygulamalı
 
 ---
 
-## 🚀 Özellikler
+## Özellikler
 
-- ✨ **Dikey & Yatay Ortalama:** CSS Flexbox ile ekranın tam ortasına yerleştirilmiş kart tasarımı.
-- 📱 **Responsive & Temiz Görünüm:** Mobil ve masaüstü uyumlu modern kart tasarımı.
-- 🎨 **CSS Grid Düzeni:** Hobiler ve ilgi alanlarını 2 sütunlu düzenli bir ızgarada gösterme.
-- 🔘 **Dinamik Etkileşim:** Butona tıklandığında sayfayı yenilemeden DOM manipülasyonu ile tebrik mesajı yazdırma.
-- 📝 **Eğitim Dostu:** Tüm kodlar, derste öğrencilere aktarımı kolaylaştıran ayrıntılı Türkçe açıklamalar ve yorum satırları içerir.
+-  **Dikey & Yatay Ortalama:** CSS Flexbox ile ekranın tam ortasına yerleştirilmiş kart tasarımı.
+-  **Responsive & Temiz Görünüm:** Mobil ve masaüstü uyumlu modern kart tasarımı.
+-  **CSS Grid Düzeni:** Hobiler ve ilgi alanlarını 2 sütunlu düzenli bir ızgarada gösterme.
+-  **Dinamik Etkileşim:** Butona tıklandığında sayfayı yenilemeden DOM manipülasyonu ile tebrik mesajı yazdırma.
+-  **Eğitim Dostu:** Tüm kodlar, derste öğrencilere aktarımı kolaylaştıran ayrıntılı Türkçe açıklamalar ve yorum satırları içerir.
 
 ---
 
@@ -36,7 +36,7 @@ kendini-tanitma-karti/
 
 ---
 
-## 💻 Nasıl Çalıştırılır?
+##  Nasıl Çalıştırılır?
 
 Projeyi çalıştırmak için herhangi bir paket yüklemesine veya sunucu kurulumuna gerek yoktur:
 
@@ -49,7 +49,7 @@ Projeyi çalıştırmak için herhangi bir paket yüklemesine veya sunucu kurulu
 
 ---
 
-## 🎓 Derste Öğrenilecek Temel Kavramlar
+##  Derste Öğrenilecek Temel Kavramlar
 
 ### 1. HTML (`index.html`)
 - `<!doctype html>`, `<html>`, `<head>`, `<body>` temel doküman yapısı
